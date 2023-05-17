@@ -26,7 +26,7 @@ const Navbar = (props: Props) => {
                         <p>Our Classes</p>
                         <p>Contact Us</p>
                     </div>
-                    <div>
+                    <div className={`${flexBetween} gap-8`}>
                         <p>Sign In</p>
                         <button>Become a member</button>
                     </div>
