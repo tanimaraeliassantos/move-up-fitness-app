@@ -5,8 +5,8 @@ import Logo from "@/assets/Logo.png";
 type Props = {}
 
 const Navbar = (props: Props) => {
-    const flexBetween = "flex items-center justify-between"
-  return 
+    const flexBetween = "flex items-center justify-between";
+  return (
     <nav>
         <div
             className={`${flexBetween} fixed top-0 z-30 w-full py-6`}
@@ -19,12 +19,25 @@ const Navbar = (props: Props) => {
                 <img alt="logo" src={Logo} />
 
                 {/* RIGHT SIDE */}
+                <div className={`${flexBetween} w-full`}>
+                    <div className={`${flexBetween} gap-8 text-sm`}>
+                        <p>Home</p>
+                        <p>Benefits</p>
+                        <p>Our Classes</p>
+                        <p>Contact Us</p>
+                    </div>
+                    <div>
+                        <p>Sign In</p>
+                        <button>Become a member</button>
+                    </div>
 
+                </div>
                 
                 </div>
             </div>
         </div>
     </nav>
+);
 }
 
 export default Navbar;
