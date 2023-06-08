@@ -9,7 +9,11 @@ const Link = ({
 }: Props) => {
   return  
   (
-    <AnchorLink>
+    <AnchorLink
+    className={}
+    href={}
+    onClick={}
+    >
       {page}
     </AnchorLink>
   )
