@@ -26,7 +26,7 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
                 <img alt="logo" src={Logo} />
 
                 {/* RIGHT SIDE */}
-                <div className={`${flexBetween} w-full`}>
+                {isAboveMediumScreens ? (<div className={`${flexBetween} w-full`}>
                     <div className={`${flexBetween} gap-8 text-sm`}>
                         <Link
                             page="Home"
@@ -53,9 +53,9 @@ const Navbar = ({selectedPage, setSelectedPage}: Props) => {
                         <p>Sign In</p>
                         <button>Become a member</button>
                     </div>
-
                 </div>
-                
+                )
+                : (<div></div>)}
                 </div>
             </div>
         </div>
