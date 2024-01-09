@@ -4,7 +4,23 @@ Move Up Fitness App is an app built with React using TypeScript.
 
 
 ## Start the App
+ ### Install dependencies
 
+```bash
+npm install
+```
+
+### Run
+
+```bash
+npm run start
+```
+
+### Deploy
+
+```bash
+npm run deploy
+```
 
 ## Features
 
